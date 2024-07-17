@@ -92,6 +92,11 @@ function replaceContent(value) {
         document.getElementById("kf").style = "background-color: rgb(212, 115, 25); transition: background-color 0.5s ease 0s;";
         xhr.open('GET', 'ruanjian/kf.html'); // 设置请求类型、地址等信息
     }
+	if (value === 'Featured') {
+	    removeStyle();
+	    document.getElementById("ts").style = "background-color: rgb(212, 115, 25); transition: background-color 0.5s ease 0s;";
+	    xhr.open('GET', 'ruanjian/ts.html'); // 设置请求类型、地址等信息
+	}
     if (value === '软件开发') {
         removeStyle();
         document.getElementById("rjkf").style = "background-color: rgb(212, 115, 25); transition: background-color 0.5s ease 0s;";
