@@ -92,7 +92,7 @@ function replaceContent(value) {
         document.getElementById("kf").style = "background-color: rgb(212, 115, 25); transition: background-color 0.5s ease 0s;";
         xhr.open('GET', 'ruanjian/kf.html'); // 设置请求类型、地址等信息
     }
-	if (value === 'Featured') {
+	if (value === '特色软件') {
 	    removeStyle();
 	    document.getElementById("ts").style = "background-color: rgb(212, 115, 25); transition: background-color 0.5s ease 0s;";
 	    xhr.open('GET', 'ruanjian/ts.html'); // 设置请求类型、地址等信息
